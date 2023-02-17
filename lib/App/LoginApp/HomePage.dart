@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.only(top: 25),
               child: Text("Food Category",style: TextStyle(fontSize: 30,color: Colors.black,fontWeight: FontWeight.bold),),
             ),
-            flexibleSpace:Image.network("https://www.daysoftheyear.com/wp-content/uploads/national-fast-food-day.jpg",fit: BoxFit.cover,),
+            flexibleSpace:Image.network("https://www.wbcsd.org/var/site/storage/images/media/images/fresh_pa/80809-2-eng-GB/FRESH_PA_i1140.jpg",fit: BoxFit.cover,),
             // flexibleSpace: Image.asset("images/bg.jpg"),
             expandedHeight: size*.15,
             centerTitle: true,
