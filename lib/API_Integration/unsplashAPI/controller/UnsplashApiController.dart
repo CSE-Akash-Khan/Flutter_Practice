@@ -17,7 +17,7 @@ class UnsplashApiController extends GetxController{
 
   Future<void>loadData()async{
     String apiLink = "https://api.unsplash.com/photos/?client_id=" + accessKey;
-    var response = await http.get(Uri.parse(apiLink));
+    var response = await http.get(Uri.parse(apiLink)); //call api
     if(response.statusCode == 200){
       var decodedData = jsonDecode(response.body);
       // print(decodedData);

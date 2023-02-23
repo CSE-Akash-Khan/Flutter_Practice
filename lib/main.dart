@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:practice/API_Integration/PlaceHolderAPI/ApiController.dart';
 import 'package:practice/AllTypedListView.dart';
 import 'package:practice/Animation/Animated_Opacity.dart';
 import 'package:practice/Animation/RippleAnimation.dart';
@@ -29,6 +30,7 @@ import 'package:practice/SEIP_Class/class8.dart';
 import 'package:practice/travel.dart';
 
 import '3dLIstView.dart';
+import 'API_Integration/PlaceHolderAPI/HomePage.dart';
 import 'API_Integration/unsplashAPI/view/HomePageUnsplash.dart';
 import 'API_Integration/unsplashAPI/view/loadPage.dart';
 import 'Animation/AnimateContainer.dart';
@@ -65,6 +67,8 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Controller controller = Get.put(Controller());
   // await di.Init();
+  ApiController apiController = Get.put(ApiController());
+
   runApp(const PracticeApp());
 }
 
@@ -86,7 +90,7 @@ class PracticeApp extends StatelessWidget {
                   color: Colors.blueAccent)),
           primarySwatch: Colors.green),
       // home: LoginAppSplashScreen(),
-      home: StackTest(),
+      home: HomePagePlaceHolder(),
     );
   }
 }
