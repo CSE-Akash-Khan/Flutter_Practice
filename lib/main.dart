@@ -28,6 +28,7 @@ import 'package:practice/WrapWidget.dart';
 import 'package:practice/car_widget.dart';
 import 'package:practice/SEIP_Class/class8.dart';
 import 'package:practice/travel.dart';
+import 'package:practice/DataTimePicker.dart';
 
 import '3dLIstView.dart';
 import 'API_Integration/PlaceHolderAPI/HomePage.dart';
@@ -47,9 +48,11 @@ import 'Gradients.dart';
 import 'Animation/HeroAnimation.dart';
 import 'SEIP_Class/AlertDialog.dart';
 import 'SEIP_Class/BmiResultPage.dart';
+import 'SEIP_Class/CarouselSlider.dart';
 import 'SEIP_Class/ListView_Model.dart';
 import 'SEIP_Class/LoginPage_form.dart';
 import 'SEIP_Class/bmi_calculator.dart';
+import 'SEIP_Class/e_commerce_design/HomePage.dart';
 import 'SEIP_Class/first_ui.dart';
 import 'SEIP_Class/imagePicker.dart';
 import 'SEIP_Class/job_UI/HomePageJobUI.dart';
@@ -62,6 +65,7 @@ import 'SEIP_Class/travel_blog_ui/TravelHomePage.dart';
 import 'SharedPreferences.dart';
 import 'SimpleWidget.dart';
 import 'GetX/controller/InitController.dart' as di;
+import 'hello.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -90,7 +94,7 @@ class PracticeApp extends StatelessWidget {
                   color: Colors.blueAccent)),
           primarySwatch: Colors.green),
       // home: LoginAppSplashScreen(),
-      home: HomePagePlaceHolder(),
+      home: HomePageHeaphone(),
     );
   }
 }

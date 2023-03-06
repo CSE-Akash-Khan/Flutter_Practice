@@ -45,6 +45,8 @@ dependencies:
   get:
   flutter_svg: ^2.0.1
   http: ^0.13.5
+  carousel_slider: ^4.2.1
+  cached_network_image: ^3.2.3
 
 
 dev_dependencies:
@@ -74,6 +76,7 @@ flutter:
     - images/
     - images/travels/
     - images/job_image/
+    - images/headphone/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -28,7 +28,7 @@ class _DataTimeState extends State<DataTime> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Text('${current_time.hour.toString()}: ${current_time.minute.toString()}:  ${current_time.second.toString()}: ${current_time.weekday.toString()} ',style: Theme.of(context).textTheme.headline1,),
-            Text(DateFormat("yMMMMEEEEd").format(current_time)),
+            // Text(DateFormat("yMMMMEEEEd").format(current_time)),
             // Text('${datePicked!.year}: ${datePicked!.month}: ${datePicked!.day}'),
             ElevatedButton(
                 onPressed: () async {
@@ -47,7 +47,7 @@ class _DataTimeState extends State<DataTime> {
             const SizedBox(
               height: 10,
             ),
-            Text("${time.hour} : ${time.minute}: ${time.period}"),
+            Text("${time.hour} : ${time.minute}"),
             SizedBox(height: 10,),
             ElevatedButton(
                 onPressed: () async {
