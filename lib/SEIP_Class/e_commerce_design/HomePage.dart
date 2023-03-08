@@ -76,13 +76,13 @@ class HomePageHeaphone extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 padding: EdgeInsets.only(right: 10),
                 // shrinkWrap: true,
-                itemCount: headPhoneController.headPhoneData.length,
+                itemCount: headphoneData.length,
                 itemBuilder: (context, index) {
-                 var headPhoneData =  headPhoneController.headPhoneDataList[index];
+                 var headPhoneData =  headphoneData[index];
 
                   return InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => HeadPhoneDetails(headPhoneData,index),));
+                      Get.to(HeadPhoneDetails(headphoneModel: headPhoneData,index: index,));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(right: 10),
@@ -140,13 +140,13 @@ class HomePageHeaphone extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 padding: EdgeInsets.only(right: 10),
                 // shrinkWrap: true,
-                itemCount: headPhoneController.headPhoneDemoDataList.length,
+                itemCount: headphoneDemoData.length,
                 itemBuilder: (context, index) {
-                  var headphoneDemo =  headPhoneController.headPhoneDemoDataList[index];
+                  var headphoneDemo =  headphoneDemoData[index];
 
                   return InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => HeadPhoneDetails(headphoneDemo,index),));
+                      Get.to(HeadPhoneDetails(headphoneModel: headphoneDemo,));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(right: 10),
